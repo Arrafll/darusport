@@ -1,0 +1,82 @@
+body{
+    background-color: #edeff4;
+}
+.galeri-container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+    /* background-color: #ffff; */
+    /* box-shadow: 10px 10px 70px  #8b8989; */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.galeri-title{
+    border-left: 5px solid red;
+    padding-left: 10px;
+}
+.galeri-content{
+    margin-top: 0px;
+}
+.galeri-sport-category{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    margin-bottom: 30px;
+}
+.img-card {
+    background-color: #ffff;
+    border-radius: 2px;
+    width: 330px;
+}
+
+.img-card h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.galeri-content img {
+   object-fit: cover;
+   object-position: center;
+    width: 330px;
+    height: 208px;
+
+}
+
+   
+
+.img-card:hover {
+    /* transform: translateY(-15%);
+    transition: transform 0.9s */
+    box-shadow: 10px 10px 70px  #8b8989;
+ }
+
+.row-img {
+    display: flex;
+    justify-content: space-between;
+}
+.img-container{
+    position: relative;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0 20px;
+    margin: 0 0 3px;
+    text-align: center;
+  }
+  
+
+  .img-container:hover .overlay {
+    opacity: 1;
+  }
