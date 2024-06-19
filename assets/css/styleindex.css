@@ -10,18 +10,16 @@ body {
     clear: both;
 }
 
-.header-center{
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-
-}
     
 .center{
     width: 50%;
     margin: 0 auto;
     display: flex;
     gap: 1em;
+}
+
+.text-center{
+    text-align: center;
 }
 
 a{
@@ -34,10 +32,6 @@ a{
     
 /* Style header */
 
-header{
-    position: sticky;
-    top: 0;
-}
 
 #header{
     background-color: #252b2f;
@@ -46,10 +40,17 @@ header{
 
 }
 
+#header .header-center{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 #header #logo{
     flex: 1;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 #header #logo img{
@@ -59,18 +60,20 @@ header{
     max-height: 229px;
 }
 #header .menu{
-
     flex: 9;
 }
 #header .menu ul{
     padding-inline-start: 0;
     list-style-type: none;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 #header .menu ul li{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
+    text-align: center;
 }
 
 #header .menu ul li .active{
@@ -224,6 +227,7 @@ footer {
     margin: 0 auto;
     gap: 2em;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .sponsor-logo-div img {
@@ -248,5 +252,22 @@ footer {
     object-position:center
 }
 @media screen and (min-width: 1200px) {    
+    header{
+        position: sticky;
+        top: 0;
+    }
+    #header .header-center{
+        flex-direction: row;
+    }
+    #header .menu ul li{
+     
+        font-size: 16px;
+    }
+    #header .menu ul{
+        justify-content: right;
+    }
+    #header .menu ul li{
+        text-align: left;
+    }
 
 }
