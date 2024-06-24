@@ -6,7 +6,6 @@
 }
 .contact{
     min-height: 80vh;
-    background-color: #e8f0fe;
     padding: 50px;
     text-align: center;
 }
@@ -26,7 +25,9 @@
 }
 .contact-form{
     text-align: left;
-    width: 40%;
+    width: 45%;
+    padding: 15px;
+    box-shadow: 2px 5px 5px 3px  #bebebe;
 }
 .contact-form h3{
     font-size: 24px;
@@ -63,8 +64,10 @@ button:hover{
     background-color: #45a049;
 }
 .contact-info{
-    width: 40%;
+    width: 25%;
     text-align: left;
+    padding: 15px;
+    box-shadow: 2px 5px 5px 3px  #bebebe;
 }
 .contact-info h3{
     font-size: 24px;
